@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><!-- The new msbuild allows you to set properties in this file that will be inherited by all projects -->
+<!-- see: http://blog.seravy.com/directory-build-targets-solution-wide-msbuild-target-part-2/ -->
+<Project>
+  <!-- These properties will be shared for all projects -->
+  <PropertyGroup>
+  <Title>Typelited</Title>
+    <!--<Version> will become 'product version' attribute in dll version properties-->
+    <Version>1.0</Version>
+    <FileVersion>1.0</FileVersion>
+    <Description>Typelited</Description>
+    <RepositoryUrl>https://stash.ccveu.local/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags></PackageTags>
+    <Copyright>Copyright 2017 </Copyright>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>true</NoWarn>
+    <IsPackable>false</IsPackable>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DefineConstants>DEBUG;TRACE;$(DefineConstants)</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>True</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DebugType>pdbonly</DebugType>
+      <Optimize>true</Optimize>
+    <DefineConstants>TRACE;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+</Project>
