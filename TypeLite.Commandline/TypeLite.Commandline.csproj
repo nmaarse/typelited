@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+    <AssemblyName>TypeScriptComandline</AssemblyName>
+    <RootNamespace>TypeScriptComandline</RootNamespace>
+    <!--<RuntimeIdentifier>win-x86</RuntimeIdentifier>-->
+    <!--<RuntimeIdentifiers>win10-x86;linux-x64</RuntimeIdentifiers>-->
+    <!--<SelfContained>true</SelfContained>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TypeLite\TypeLited.csproj" />
+  </ItemGroup>
+
+</Project>
