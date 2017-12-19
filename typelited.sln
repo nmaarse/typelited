@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeLited", "TypeLite\TypeLited.csproj", "{8CA59E0F-DD79-4C12-AA9B-457239DC58D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeLited.Tests", "TypeLite.Tests\TypeLited.Tests.csproj", "{6B17DB0F-62EE-465A-A5CB-6DC0AD5A0546}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CA59E0F-DD79-4C12-AA9B-457239DC58D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA59E0F-DD79-4C12-AA9B-457239DC58D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA59E0F-DD79-4C12-AA9B-457239DC58D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA59E0F-DD79-4C12-AA9B-457239DC58D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B17DB0F-62EE-465A-A5CB-6DC0AD5A0546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B17DB0F-62EE-465A-A5CB-6DC0AD5A0546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B17DB0F-62EE-465A-A5CB-6DC0AD5A0546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B17DB0F-62EE-465A-A5CB-6DC0AD5A0546}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50A99E11-8F7C-4996-B6C8-349595820A87}
+	EndGlobalSection
+EndGlobal

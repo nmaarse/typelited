@@ -1,0 +1,9 @@
+/TypeLite.Tests/bin/
+/TypeLite.Tests/obj/
+/.vs/
+/typelited.v3.ncrunchsolution.user
+/**/typelite.v3.ncrunch*
+/**/obj/
+/**/bin/Debug/
+/**/.vs/typelite/
+/**/_NCrunch*/
