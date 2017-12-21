@@ -3,6 +3,9 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
     <AssemblyName>TypeLiter</AssemblyName>
+    <IsPackable>true</IsPackable>
+      <projectUrl>http://github.com/contoso/UsefulStuff</projectUrl>
+      <Authors>Niek Maarse</Authors>
   </PropertyGroup>
 
   <ItemGroup>

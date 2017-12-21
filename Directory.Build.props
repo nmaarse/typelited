@@ -5,13 +5,13 @@
   <PropertyGroup>
   <Title>Typelited</Title>
     <!--<Version> will become 'product version' attribute in dll version properties-->
-    <Version>1.0</Version>
-    <FileVersion>1.0</FileVersion>
-    <Description>Typelited</Description>
+    <Version>1.1.3</Version>
+    <FileVersion>1.1.3</FileVersion>
+    <!--<Description>Typelited</Description>
     <RepositoryUrl>https://stash.ccveu.local/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags></PackageTags>
-    <Copyright>Copyright 2017 </Copyright>
+    <Copyright>Copyright 2017 </Copyright>-->
     <WarningLevel>4</WarningLevel>
     <NoWarn>true</NoWarn>
     <IsPackable>false</IsPackable>
