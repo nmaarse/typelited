@@ -6,6 +6,7 @@
     <IsPackable>true</IsPackable>
       <projectUrl>http://github.com/contoso/UsefulStuff</projectUrl>
       <Authors>Niek Maarse</Authors>
+      <Version>1.1.5</Version>
   </PropertyGroup>
 
   <ItemGroup>

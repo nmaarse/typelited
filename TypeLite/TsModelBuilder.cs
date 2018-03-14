@@ -131,12 +131,34 @@ namespace TypeLite {
         /// </summary>
         /// <param name="assembly">The assembly with classes to add</param>
         public void Add(Assembly assembly) {
-            foreach (var type in assembly.GetTypes().Where(t =>
-                (t.GetCustomAttribute<TsClassAttribute>(false) != null && TsType.GetTypeFamily(t) == TsTypeFamily.Class) ||
-                (t.GetCustomAttribute<TsEnumAttribute>(false) != null && TsType.GetTypeFamily(t) == TsTypeFamily.Enum) ||
-                (t.GetCustomAttribute<TsInterfaceAttribute>(false) != null && TsType.GetTypeFamily(t) == TsTypeFamily.Class)
-                )) {
-                this.Add(type);
+            try
+            {
+                foreach (var type in assembly.GetTypes().Where(t =>
+                    (t.GetCustomAttribute<TsClassAttribute>(false) != null &&
+                     TsType.GetTypeFamily(t) == TsTypeFamily.Class) ||
+                    (t.GetCustomAttribute<TsEnumAttribute>(false) != null &&
+                     TsType.GetTypeFamily(t) == TsTypeFamily.Enum) ||
+                    (t.GetCustomAttribute<TsInterfaceAttribute>(false) != null &&
+                     TsType.GetTypeFamily(t) == TsTypeFamily.Class)
+                ))
+                {
+                    Add(type);
+                }
+            }
+            catch (ReflectionTypeLoadException e)
+            {
+                var availableTypes = e.Types.Where(t =>
+                    t != null &&
+                    t.GetCustomAttribute<TsClassAttribute>(false) != null &&
+                    TsType.GetTypeFamily(t) == TsTypeFamily.Class ||
+                    t.GetCustomAttribute<TsEnumAttribute>(false) != null &&
+                    TsType.GetTypeFamily(t) == TsTypeFamily.Enum ||
+                    t.GetCustomAttribute<TsInterfaceAttribute>(false) != null &&
+                    TsType.GetTypeFamily(t) == TsTypeFamily.Class);
+                foreach (var type in availableTypes)
+                {
+                    Add(type);
+                }
             }
         }
 
